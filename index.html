@@ -36,8 +36,8 @@ nav {
 }
 .nav-name { font-family: var(--serif); font-size: 20px; color: var(--ink); text-decoration: none; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { text-decoration: none; color: var(--ink-muted); font-size: 13px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
-.nav-links a:hover { color: var(--lavender); }
+.nav-links a { text-decoration: none; color: var(--ink-muted); font-size: 13px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s, background 0.2s; padding: 6px 12px; border-radius: 8px; }
+.nav-links a:hover { color: var(--lavender); background: var(--lavender-light); }
 
 /* BOTTOM-LEFT PINNED ICONS */
 .bottom-icons {
@@ -71,27 +71,24 @@ nav {
 
 /* HERO */
 #about { min-height: 100vh; display: flex; align-items: center; padding: 100px 3rem 3rem; max-width: 1000px; margin: 0 auto; }
-.hero-grid { display: grid; grid-template-columns: 1fr 290px; gap: 5rem; align-items: start; width: 100%; padding-top: 2rem; }
-.hero-name { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.0; color: var(--ink); margin-bottom: 1.25rem; }
+.hero-grid { display: grid; grid-template-columns: 1fr 340px; gap: 6rem; align-items: start; width: 100%; padding-top: 2rem; }.hero-name { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.0; color: var(--ink); margin-bottom: 1.25rem; }
 .hero-name em { font-style: italic; color: #4B3B8C; }
 .identity-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem; }
 .identity-pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 5px 14px; border-radius: 100px; letter-spacing: 0.04em; }
 .pill-ai { background: #1E1A2E; color: #C4B8E8; }
 .pill-data { background: var(--lavender-light); color: var(--lavender); border: 1px solid var(--lavender-mid); }
 .pill-ml { background: var(--rose-light); color: var(--rose); border: 1px solid var(--rose-mid); }
-.hero-bio { font-size: 15px; color: var(--ink-muted); max-width: 480px; margin-bottom: 1.75rem; line-height: 1.85; }
+.hero-bio { font-size: 16px; color: var(--ink-muted); max-width: 480px; margin-bottom: 2.25rem; line-height: 2; }
 
 /* EDU CARD */
 .edu-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem 1.5rem; margin-bottom: 1.75rem; max-width: 480px; display: flex; align-items: flex-start; gap: 1rem; }
-.edu-logo { width: 42px; height: 42px; flex-shrink: 0; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid var(--border); }
-.edu-school { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
+.edu-logo { width: 42px; height: 42px; flex-shrink: 0; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: transparent; }.edu-school { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
 .edu-detail { font-size: 13px; color: var(--ink-muted); line-height: 1.6; }
 .edu-gpa { display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; font-size: 12px; font-weight: 500; color: var(--lavender); background: var(--lavender-light); padding: 2px 10px; border-radius: 100px; }
 
 /* PHOTO */
 .hero-right { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; padding-top: 0.5rem; }
-.photo-frame { width: 260px; height: 320px; border-radius: 130px 130px 90px 90px; background: linear-gradient(160deg, var(--lavender-light) 0%, var(--rose-light) 100%); border: 2px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; overflow: hidden; }
-.photo-frame svg { opacity: 0.3; }
+.photo-frame { width: 320px; height: 390px; border-radius: 160px 160px 110px 110px; background: linear-gradient(160deg, var(--lavender-light) 0%, var(--rose-light) 100%); border: 2px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; overflow: hidden; }.photo-frame svg { opacity: 0.3; }
 .photo-label { font-size: 11px; color: var(--lavender); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
 .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
@@ -198,8 +195,9 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
 
 .meow-bubble {
   position: absolute;
-  bottom: 68px;
-  /* JS sets left/right based on direction */
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   border: 1.5px solid var(--border);
   border-radius: 10px;
@@ -218,7 +216,8 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
   content: '';
   position: absolute;
   top: 100%;
-  left: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 6px solid transparent;
   border-top-color: white;
 }
@@ -249,8 +248,8 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
 
 #catCanvas { image-rendering: pixelated; width: 64px; height: 64px; display: block; }
 
-.paw { position: fixed; bottom: 20px; width: 14px; height: 14px; pointer-events: none; z-index: 199; opacity: 0; animation: pawFade 3s ease forwards; }
-@keyframes pawFade { 0% { opacity: 0.5; } 60% { opacity: 0.35; } 100% { opacity: 0; } }
+.paw { position: fixed; bottom: 20px; width: 20px; height: 20px; pointer-events: none; z-index: 199; opacity: 0; animation: pawFade 4s ease forwards; }
+@keyframes pawFade { 0% { opacity: 0; } 10% { opacity: 0.85; } 70% { opacity: 0.7; } 100% { opacity: 0; } }
 
 @media (max-width: 720px) {
   nav { padding: 0 1.25rem; }
@@ -662,14 +661,6 @@ function updateCatPos() {
   // flip canvas based on direction — cat always faces direction of travel
   const flipped = catDir === -1;
   drawCatFrame(ctx, currentCat, animFrame, flipped);
-  // bubble: always to the right of the cat face
-  // when going right (dir=1), face is right side → bubble to the right
-  // when going left (dir=-1, canvas flipped), face is left side → bubble to the left
-  meowBubble.style.left = catDir === 1 ? '70px' : 'auto';
-  meowBubble.style.right = catDir === -1 ? '70px' : 'auto';
-  meowBubble.style.transform = 'none';
-  // tail of bubble always points toward cat
-  meowBubble.style.setProperty('--bubble-tail-left', catDir === 1 ? '16px' : 'auto');
 }
 
 let frameCounter = 0;
@@ -725,10 +716,10 @@ setInterval(tick, 16);
 
 // PAW PRINTS
 const pawSvg = `<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="10" cy="13" rx="4.5" ry="3.5" fill="#C4B8E8" opacity="0.65"/>
-  <ellipse cx="4" cy="7.5" rx="2" ry="2.5" fill="#C4B8E8" opacity="0.65"/>
-  <ellipse cx="10" cy="5.5" rx="2" ry="2.5" fill="#C4B8E8" opacity="0.65"/>
-  <ellipse cx="16" cy="7.5" rx="2" ry="2.5" fill="#C4B8E8" opacity="0.65"/>
+  <ellipse cx="10" cy="13" rx="4.5" ry="3.5" fill="#9B8EC4"/>
+  <ellipse cx="4" cy="7.5" rx="2" ry="2.5" fill="#9B8EC4"/>
+  <ellipse cx="10" cy="5.5" rx="2" ry="2.5" fill="#9B8EC4"/>
+  <ellipse cx="16" cy="7.5" rx="2" ry="2.5" fill="#9B8EC4"/>
 </svg>`;
 
 function spawnPaw(x, dir) {
@@ -753,14 +744,20 @@ function selectCat(idx, e) {
 
 catEl.addEventListener('click', (e) => {
   if (e.target.closest('.cat-btn')) return;
-  showSwitcher = !showSwitcher;
-  catSwitcher.classList.toggle('show', showSwitcher);
   if (!showSwitcher) {
+    // first click: meow
     meowBubble.textContent = cats[currentCat].meow;
     meowBubble.classList.add('show');
     clearTimeout(meowTimeout);
-    meowTimeout = setTimeout(() => meowBubble.classList.remove('show'), 2000);
+    meowTimeout = setTimeout(() => {
+      meowBubble.classList.remove('show');
+    }, 1800);
+    showSwitcher = true;
+    setTimeout(() => catSwitcher.classList.add('show'), 400);
   } else {
+    // second click: close switcher silently
+    showSwitcher = false;
+    catSwitcher.classList.remove('show');
     meowBubble.classList.remove('show');
   }
 });
