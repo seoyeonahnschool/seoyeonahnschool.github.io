@@ -59,10 +59,10 @@ nav {
 .bottom-icon:hover { border-color: var(--lavender); color: var(--lavender); transform: translateY(-2px); }
 
 /* SHARED */
-.page-section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+.page-section { padding: 5rem 2.5rem; max-width: 1100px; margin: 0 auto; }
 .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); margin-bottom: 0.5rem; }
 .section-title { font-family: var(--serif); font-size: clamp(2rem, 4vw, 2.8rem); color: var(--ink); margin-bottom: 2.5rem; font-weight: 400; line-height: 1.1; }
-.divider { border: none; border-top: 1px solid var(--border); margin: 0 2rem; }
+.divider { border: none; border-top: 1px solid var(--border); margin: 0 2.5rem; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 100px; font-size: 13px; font-weight: 400; text-decoration: none; transition: all 0.2s; font-family: var(--sans); letter-spacing: 0.03em; }
 .btn-primary { background: var(--lavender); color: #fff; }
 .btn-primary:hover { background: #8577B8; }
@@ -70,8 +70,8 @@ nav {
 .btn-outline:hover { border-color: var(--lavender); color: var(--lavender); }
 
 /* HERO */
-#about { min-height: 100vh; display: flex; align-items: center; padding: 100px 2rem 3rem; max-width: 1200px; margin: 0 auto; }
-.hero-grid { display: grid; grid-template-columns: 1fr 340px; gap: 6rem; align-items: start; width: 100%; padding-top: 2rem; }.hero-name { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.0; color: var(--ink); margin-bottom: 1.25rem; }
+#about { min-height: 100vh; display: flex; align-items: center; padding: 100px 2.5rem 3rem; max-width: 1100px; margin: 0 auto; }
+.hero-grid { display: grid; grid-template-columns: 1fr 360px; gap: 4rem; align-items: start; width: 100%; padding-top: 2rem; }.hero-name { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.0; color: var(--ink); margin-bottom: 1.25rem; }
 .hero-name em { font-style: italic; color: #4B3B8C; }
 .identity-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem; }
 .identity-pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 5px 14px; border-radius: 100px; letter-spacing: 0.04em; }
@@ -93,7 +93,7 @@ nav {
 .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* SKILLS SECTION */
-.skills-wrap { padding: 0 2rem 3.5rem; max-width: 1200px; margin: 0 auto; }
+.skills-wrap { padding: 0 2.5rem 3.5rem; max-width: 1100px; margin: 0 auto; }
 .skills-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 1rem; }
 .skill-group-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .skill-group-label { font-size: 11px; color: var(--ink-faint); font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; min-width: 78px; }
@@ -195,7 +195,7 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
 
 .cat-switcher {
   position: absolute;
-  bottom: 105px;
+  bottom: 72px;
   left: 50%;
   transform: translateX(-50%);
   background: white;
@@ -334,7 +334,7 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
   <h2 class="section-title">Experience</h2>
   <div class="exp-sidebar">
     <div class="exp-nav">
-      <div class="exp-nav-item active rose-active" data-panel="crizm"><span class="exp-nav-org"><span class="exp-now-dot"></span>CRIZM</span><span class="exp-nav-role">Founding CRIZMeer</span><span class="exp-nav-period">Jan 2026 – Present</span></div>
+      <div class="exp-nav-item active rose-active" data-panel="crizm"><span class="exp-nav-org"><span class="exp-now-dot"></span>CRIZM</span><span class="exp-nav-role">Founding Member</span><span class="exp-nav-period">Jan 2026 – Present</span></div>
       <div class="exp-nav-item" data-panel="ta114"><span class="exp-nav-org">Stony Brook</span><span class="exp-nav-role">Teaching Assistant</span><span class="exp-nav-period">Aug 2024 – May 2025</span></div>
       <div class="exp-nav-item" data-panel="ra"><span class="exp-nav-org">Stony Brook</span><span class="exp-nav-role">Residential Advisor</span><span class="exp-nav-period">Aug 2024 – Jun 2025</span></div>
       <div class="exp-nav-item" data-panel="tutor"><span class="exp-nav-org">Stony Brook</span><span class="exp-nav-role">Tutor · CSE 101</span><span class="exp-nav-period">Mar 2024 – Jun 2024</span></div>
@@ -360,7 +360,7 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
 
       <div class="exp-panel" id="panel-ta114">
         <div class="exp-panel-header">
-          <div class="exp-panel-role">Teaching Assistant<br>CSE 114</div>
+          <div class="exp-panel-role">Teaching Assistant · CSE 114</div>
           <div class="exp-panel-meta"><div class="exp-panel-org">Stony Brook University</div><div class="exp-panel-period">Aug 2024 – May 2025</div></div>
         </div>
         <ul class="exp-bullets">
@@ -650,7 +650,7 @@ function tick() {
 
   // paw prints every ~90px traveled
   pawCounter++;
-  if (pawCounter % 80 === 0) spawnPaw(catX + 32, catDir);
+  if (pawCounter % 80 === 0) spawnPaw(catX + 32 - (catDir * 40), catDir, pawCounter % 160 === 0);
 
   // reached edge → flip or hide for a while
   if (catDir === 1 && catX > window.innerWidth + 80) {
@@ -691,10 +691,11 @@ const pawSvg = `<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
   <ellipse cx="16" cy="7.5" rx="2" ry="2.5" fill="#9B8EC4"/>
 </svg>`;
 
-function spawnPaw(x, dir) {
+function spawnPaw(x, dir, isLeft) {
   const paw = document.createElement('div');
   paw.className = 'paw';
   paw.style.left = (x - 7) + 'px';
+  paw.style.bottom = isLeft ? '28px' : '14px';
   paw.style.transform = dir === -1 ? 'scaleX(-1)' : '';
   paw.innerHTML = pawSvg;
   document.body.appendChild(paw);
