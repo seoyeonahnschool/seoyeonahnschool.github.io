@@ -308,7 +308,7 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
       <p class="hero-bio">I'm a computer science student with a 4.0 GPA passionate about AI, data science, and building tools that make an impact. Whether I'm teaching 60+ students object-oriented programming, coordinating teams to ship an AI grading platform, or wiring up a full-stack web app — I bring the same rigor and curiosity to everything I do.</p>
       <div class="edu-card">
         <div class="edu-logo">
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="48" fill="#CC0000"/><circle cx="50" cy="50" r="42" fill="none" stroke="#fff" stroke-width="1.5"/><text x="50" y="38" text-anchor="middle" font-size="7" fill="#fff" font-family="serif" font-weight="bold">STONY BROOK</text><text x="50" y="48" text-anchor="middle" font-size="7" fill="#fff" font-family="serif" font-weight="bold">UNIVERSITY</text><line x1="50" y1="55" x2="50" y2="78" stroke="#fff" stroke-width="2.5"/><line x1="42" y1="78" x2="58" y2="78" stroke="#fff" stroke-width="2.5"/><ellipse cx="50" cy="53" rx="5" ry="7" fill="#fff"/><ellipse cx="50" cy="51" rx="3" ry="4" fill="#CC0000"/><text x="50" y="90" text-anchor="middle" font-size="5.5" fill="#fff" font-family="serif" letter-spacing="1">EST. 1957</text></svg>
+          <img src="sbu-logo.png" alt="Stony Brook University" style="width:38px; height:38px; object-fit:contain;" />
         </div>
         <div>
           <div class="edu-school">Stony Brook University</div>
@@ -323,8 +323,7 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
     </div>
     <div class="hero-right">
       <div class="photo-frame">
-        <svg width="56" height="56" fill="none" stroke="#9B8EC4" stroke-width="1.2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        <span class="photo-label">Your photo</span>
+        <img src="headshot.jpg" alt="headshot" />
       </div>
     </div>
   </div>
@@ -473,12 +472,6 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
       <div class="proj-click-hint"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>Click to expand</div>
     </div>
 
-    <div class="proj-card" style="border-style: dashed; opacity: 0.5; cursor: default;">
-      <div class="proj-tag">Add a project</div>
-      <div class="proj-title">More coming soon</div>
-      <p class="proj-desc">Send me a title and description and I'll add it here.</p>
-    </div>
-
   </div>
 </div>
 
@@ -593,11 +586,11 @@ document.addEventListener('keydown', e => {
 
 // ── PIXEL CAT ──
 const cats = [
-  { body:'#E8892B', stripe:'#C46A10', belly:'#F5C97A', earInner:'#F5A0A0', eye:'#3A2800', nose:'#D45A5A', meow:'Meow! 🐱' },
-  { body:'#DDDDDD', stripe:'#333333', belly:'#FFFFFF', earInner:'#F5A0A0', eye:'#3A2800', nose:'#D45A5A', meow:'Purr... 🖤' },
-  { body:'#F4AABB', stripe:'#D47090', belly:'#FDD8E5', earInner:'#FFD6E0', eye:'#3A2800', nose:'#D45A5A', meow:'Nyaa~ 🌸' },
-  { body:'#8C9BAB', stripe:'#5A6B78', belly:'#C8D4DC', earInner:'#F5A0A0', eye:'#3A2800', nose:'#D45A5A', meow:'Mrrrow 🌙' },
-  { body:'#2A2A2A', stripe:'#111111', belly:'#444444', earInner:'#F5A0A0', eye:'#FFD700', nose:'#D45A5A', meow:'Boo! 🖤' }
+  { body:'#E8892B', stripe:'#C46A10', belly:'#F5C97A', earInner:'#F5A0A0', eye:'#3A2800', nose:'#D45A5A', meow:'meow' },
+  { body:'#DDDDDD', stripe:'#333333', belly:'#FFFFFF', earInner:'#F5A0A0', eye:'#3A2800', nose:'#D45A5A', meow:'meow' },
+  { body:'#F4AABB', stripe:'#D47090', belly:'#FDD8E5', earInner:'#FFD6E0', eye:'#3A2800', nose:'#D45A5A', meow:'meow' },
+  { body:'#8C9BAB', stripe:'#5A6B78', belly:'#C8D4DC', earInner:'#F5A0A0', eye:'#3A2800', nose:'#D45A5A', meow:'meow' },
+  { body:'#2A2A2A', stripe:'#111111', belly:'#444444', earInner:'#F5A0A0', eye:'#FFD700', nose:'#D45A5A', meow:'meow' }
 ];
 
 let currentCat = 0;
