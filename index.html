@@ -24,7 +24,7 @@
   --sans: 'DM Sans', system-ui, sans-serif;
 }
 html { scroll-behavior: smooth; }
-body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-size: 16px; line-height: 1.7; font-weight: 300; }
+body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-size: 17px; line-height: 1.75; font-weight: 300; }
 
 /* NAV */
 nav {
@@ -49,7 +49,7 @@ nav {
   background: var(--border); margin: 4px auto 0; 
 }
 .bottom-icon {
-  width: 36px; height: 36px; border-radius: 9px;
+  width: 44px; height: 44px; border-radius: 11px;
   background: var(--surface); border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
   text-decoration: none; color: var(--ink-muted);
@@ -59,10 +59,10 @@ nav {
 .bottom-icon:hover { border-color: var(--lavender); color: var(--lavender); transform: translateY(-2px); }
 
 /* SHARED */
-.page-section { padding: 5rem 3rem; max-width: 1000px; margin: 0 auto; }
+.page-section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
 .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); margin-bottom: 0.5rem; }
 .section-title { font-family: var(--serif); font-size: clamp(2rem, 4vw, 2.8rem); color: var(--ink); margin-bottom: 2.5rem; font-weight: 400; line-height: 1.1; }
-.divider { border: none; border-top: 1px solid var(--border); margin: 0 3rem; }
+.divider { border: none; border-top: 1px solid var(--border); margin: 0 2rem; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 100px; font-size: 13px; font-weight: 400; text-decoration: none; transition: all 0.2s; font-family: var(--sans); letter-spacing: 0.03em; }
 .btn-primary { background: var(--lavender); color: #fff; }
 .btn-primary:hover { background: #8577B8; }
@@ -70,7 +70,7 @@ nav {
 .btn-outline:hover { border-color: var(--lavender); color: var(--lavender); }
 
 /* HERO */
-#about { min-height: 100vh; display: flex; align-items: center; padding: 100px 3rem 3rem; max-width: 1000px; margin: 0 auto; }
+#about { min-height: 100vh; display: flex; align-items: center; padding: 100px 2rem 3rem; max-width: 1200px; margin: 0 auto; }
 .hero-grid { display: grid; grid-template-columns: 1fr 340px; gap: 6rem; align-items: start; width: 100%; padding-top: 2rem; }.hero-name { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.0; color: var(--ink); margin-bottom: 1.25rem; }
 .hero-name em { font-style: italic; color: #4B3B8C; }
 .identity-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem; }
@@ -93,7 +93,7 @@ nav {
 .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* SKILLS SECTION */
-.skills-wrap { padding: 0 3rem 3.5rem; max-width: 1000px; margin: 0 auto; }
+.skills-wrap { padding: 0 2rem 3.5rem; max-width: 1200px; margin: 0 auto; }
 .skills-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 1rem; }
 .skill-group-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .skill-group-label { font-size: 11px; color: var(--ink-faint); font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; min-width: 78px; }
@@ -193,36 +193,6 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
 }
 .cat-wrap { position: relative; display: flex; flex-direction: column; align-items: center; }
 
-.meow-bubble {
-  position: absolute;
-  bottom: 72px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  border: 1.5px solid var(--border);
-  border-radius: 10px;
-  padding: 6px 12px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--ink);
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-family: var(--sans);
-}
-.meow-bubble::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top-color: white;
-}
-.meow-bubble.show { opacity: 1; }
-
 .cat-switcher {
   position: absolute;
   bottom: 105px;
@@ -249,7 +219,7 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
 #catCanvas { image-rendering: pixelated; width: 64px; height: 64px; display: block; }
 
 .paw { position: fixed; bottom: 20px; width: 20px; height: 20px; pointer-events: none; z-index: 199; opacity: 0; animation: pawFade 4s ease forwards; }
-@keyframes pawFade { 0% { opacity: 0; } 10% { opacity: 0.85; } 70% { opacity: 0.7; } 100% { opacity: 0; } }
+@keyframes pawFade { 0% { opacity: 0; } 8% { opacity: 0.9; } 50% { opacity: 0.75; } 80% { opacity: 0.35; } 100% { opacity: 0; } }
 
 @media (max-width: 720px) {
   nav { padding: 0 1.25rem; }
@@ -274,13 +244,13 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
 <!-- BOTTOM-LEFT PINNED ICONS -->
 <div class="bottom-icons">
   <a href="https://www.linkedin.com/in/seoyeon-ahn1" target="_blank" class="bottom-icon" title="LinkedIn">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7"/></svg>
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7"/></svg>
   </a>
   <a href="https://github.com/seoyeonahnschool" target="_blank" class="bottom-icon" title="GitHub">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
   </a>
   <a href="mailto:seoyeon.ahn.1@stonybrook.edu" class="bottom-icon" title="Email">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
   </a>
 </div>
 
@@ -304,7 +274,7 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
         <span class="identity-pill pill-data"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>Data Science</span>
         <span class="identity-pill pill-ml"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Full Stack Dev</span>
       </div>
-      <p class="hero-bio">I'm a computer science student with a 4.0 GPA passionate about AI, data science, and building tools that make an impact. Whether I'm teaching 60+ students object-oriented programming, coordinating teams to ship an AI grading platform, or wiring up a full-stack web app — I bring the same rigor and curiosity to everything I do.</p>
+      <p class="hero-bio">I'm a computer science student passionate about AI, data science, and building tools that make an impact. Whether I'm teaching 60+ students object-oriented programming, coordinating teams to ship an AI grading platform, or wiring up a full-stack web app — I bring the same rigor and curiosity to everything I do.</p>
       <div class="edu-card">
         <div class="edu-logo">
           <img src="sbu-logo.png" alt="Stony Brook University" style="width:38px; height:38px; object-fit:contain;" />
@@ -539,12 +509,11 @@ footer { text-align: center; padding: 2rem 3rem 6rem; border-top: 1px solid var(
   </div>
 </div>
 
-<footer>&copy; 2026 Seoyeon Ahn &nbsp;·&nbsp; Made with care</footer>
+<footer>&copy; 2026 Seoyeon Ahn &nbsp;·&nbsp; All rights reserved</footer>
 
 <!-- PIXEL CAT -->
 <div id="cat-container">
   <div class="cat-wrap">
-    <div class="meow-bubble" id="meowBubble">Meow! ✨</div>
     <div class="cat-switcher" id="catSwitcher">
       <div class="cat-btn selected" id="btn-0" onclick="selectCat(0,event)"></div>
       <div class="cat-btn" id="btn-1" onclick="selectCat(1,event)"></div>
@@ -681,7 +650,7 @@ function tick() {
 
   // paw prints every ~90px traveled
   pawCounter++;
-  if (pawCounter % 220 === 0) spawnPaw(catX + 32, catDir);
+  if (pawCounter % 80 === 0) spawnPaw(catX + 32, catDir);
 
   // reached edge → flip or hide for a while
   if (catDir === 1 && catX > window.innerWidth + 80) {
@@ -729,37 +698,19 @@ function spawnPaw(x, dir) {
   paw.style.transform = dir === -1 ? 'scaleX(-1)' : '';
   paw.innerHTML = pawSvg;
   document.body.appendChild(paw);
-  setTimeout(() => paw.remove(), 3100);
+  setTimeout(() => paw.remove(), 4000);
 }
 
 function selectCat(idx, e) {
   if (e) e.stopPropagation();
   currentCat = idx;
   document.querySelectorAll('.cat-btn').forEach((b,i) => b.classList.toggle('selected', i===idx));
-  meowBubble.textContent = cats[idx].meow;
-  meowBubble.classList.add('show');
-  clearTimeout(meowTimeout);
-  meowTimeout = setTimeout(() => meowBubble.classList.remove('show'), 2200);
 }
 
 catEl.addEventListener('click', (e) => {
   if (e.target.closest('.cat-btn')) return;
-  if (!showSwitcher) {
-    // first click: meow
-    meowBubble.textContent = cats[currentCat].meow;
-    meowBubble.classList.add('show');
-    clearTimeout(meowTimeout);
-    meowTimeout = setTimeout(() => {
-      meowBubble.classList.remove('show');
-    }, 1800);
-    showSwitcher = true;
-    setTimeout(() => catSwitcher.classList.add('show'), 400);
-  } else {
-    // second click: close switcher silently
-    showSwitcher = false;
-    catSwitcher.classList.remove('show');
-    meowBubble.classList.remove('show');
-  }
+  showSwitcher = !showSwitcher;
+  catSwitcher.classList.toggle('show', showSwitcher)
 });
 
 // kick off initial position
